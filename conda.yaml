@@ -1,0 +1,14 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7.5
+  - pip=20.1
+  - pip:
+      - /home/henrikv/projects/rpa/example-robots/ocr-bet/rpaframework_core-4.0.1-py3-none-any.whl
+      - /home/henrikv/projects/rpa/example-robots/ocr-bet/rpaframework-6.7.1-py3-none-any.whl
+      - /home/henrikv/projects/rpa/example-robots/ocr-bet/rpaframework_recognition-0.5.0-py3-none-any.whl
+    # - "git+https://github.com/robocorp/rpaframework@feature/desktop-ocr#egg=rpaframework-recognition&subdirectory=packages/recognition"
+    # - "git+https://github.com/robocorp/rpaframework@feature/desktop-ocr#egg=rpaframework&subdirectory=packages/main"
+    # - rpaframework
+    # - rpaframework-recognition
