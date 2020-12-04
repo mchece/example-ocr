@@ -8,6 +8,7 @@ from RPA.Desktop.keywords import keyword
 
 run = BuiltIn().run_keyword
 get_library = BuiltIn().get_library_instance
+get_variable = BuiltIn().get_variable_value
 
 
 class GnucashLibrary:
@@ -18,7 +19,7 @@ class GnucashLibrary:
 
     @keyword
     def open_gnucash(self):
-        self.gnuapp = self.desktop.open_application("gnucash")
+        self.gnuapp = self.desktop.open_application(get_variable("$GNUCASH_EXECUTABLE"))
         self.desktop.wait_for_element("ocr:New", timeout=20)
 
     @keyword

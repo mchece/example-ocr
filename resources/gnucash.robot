@@ -6,7 +6,7 @@ Fill Data
     Fill Notes              Next we'll find the cancel button by image template
 
 Open Gnucash
-    Open Application        gnucash
+    Open Application        ${GNUCASH_EXECUTABLE}
     Wait For Element        ocr:New  timeout=20
 
 Close Gnucash
